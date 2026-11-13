@@ -1,0 +1,16 @@
+{"ts":"2026-01-15T12:00:00+00:00","level":"INFO","event":"started","version":"1.0","port":8080}
+{"ts":"2026-01-15T12:00:01+00:00","level":"INFO","event":"http_request","request_id":"r001","method":"GET","path":"/items","status":200,"duration_ms":3.1,"version":"1.0"}
+{"ts":"2026-01-15T12:00:02+00:00","level":"INFO","event":"http_request","request_id":"r002","method":"GET","path":"/healthz","status":200,"duration_ms":0.2,"version":"1.0"}
+{"ts":"2026-01-15T12:00:03+00:00","level":"INFO","event":"http_request","request_id":"r003","method":"GET","path":"/items","status":200,"duration_ms":2.8,"version":"1.0"}
+{"ts":"2026-01-15T12:00:04+00:00","level":"INFO","event":"http_request","request_id":"r004","method":"GET","path":"/slow","status":200,"duration_ms":701.0,"version":"1.0"}
+{"ts":"2026-01-15T12:00:05+00:00","level":"INFO","event":"http_request","request_id":"r005","method":"GET","path":"/unknown","status":404,"duration_ms":0.4,"version":"1.0"}
+{"ts":"2026-01-15T12:00:10+00:00","level":"INFO","event":"started","version":"2.0","port":8080}
+{"ts":"2026-01-15T12:00:11+00:00","level":"ERROR","event":"http_request","request_id":"r006","method":"GET","path":"/items","status":503,"duration_ms":0.3,"version":"2.0","error":"PermissionError"}
+{"ts":"2026-01-15T12:00:12+00:00","level":"INFO","event":"http_request","request_id":"r007","method":"GET","path":"/healthz","status":200,"duration_ms":0.2,"version":"2.0"}
+{"ts":"2026-01-15T12:00:13+00:00","level":"ERROR","event":"http_request","request_id":"r008","method":"GET","path":"/readyz","status":503,"duration_ms":0.3,"version":"2.0","error":"PermissionError"}
+{"ts":"2026-01-15T12:00:14+00:00","level":"ERROR","event":"http_request","request_id":"r009","method":"GET","path":"/items","status":503,"duration_ms":0.4,"version":"2.0","error":"PermissionError"}
+{"ts":"2026-01-15T12:00:15+00:00","level":"INFO","event":"http_request","request_id":"r010","method":"GET","path":"/slow","status":200,"duration_ms":1501.0,"version":"2.0"}
+{"ts":"2026-01-15T12:00:16+00:00","level":"ERROR","event":"http_request","request_id":"r011","method":"GET","path":"/fail","status":500,"duration_ms":0.3,"version":"2.0"}
+{"ts":"2026-01-15T12:00:20+00:00","level":"INFO","event":"started","version":"2.1","port":8080}
+{"ts":"2026-01-15T12:00:21+00:00","level":"INFO","event":"http_request","request_id":"r012","method":"GET","path":"/items","status":200,"duration_ms":3.0,"version":"2.1"}
+{"ts":"2026-01-15T12:00:22+00:00","level":"INFO","event":"http_request","request_id":"r013","method":"GET","path":"/readyz","status":200,"duration_ms":0.3,"version":"2.1"}

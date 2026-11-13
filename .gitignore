@@ -1,2 +1,18 @@
 .obsidian/
 .env
+__pycache__/
+*.pyc
+
+# Runtime state, secrets and lab backups stay outside version control.
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+*.pem
+*.key
+*.p12
+*.pcap
+*.pcapng
+backups/
